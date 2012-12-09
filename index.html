@@ -37,36 +37,35 @@
 	<script>
 	function initialize_map() {
 	        var mapOptions = {
-	          zoom: 15,
-	          center: new google.maps.LatLng(45.06448847650592, 7.6572346687316895),
+	          zoom: 17,
+	          center: new google.maps.LatLng(43.770551, 11.268603),
 	          mapTypeId: google.maps.MapTypeId.ROADMAP
 	        }
 	        var map = new google.maps.Map(document.getElementById('map_canvas'),
 	                                      mapOptions);
 
-	        var I3P = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.06539781596831, 7.657513618469238),
+	        var sede_dada = new google.maps.Marker({
+	            position: new google.maps.LatLng(43.770551, 11.268603),
 	            map: map,
-	            icon: 'img/marker_i3p.png',
-				title:"I3P"
+	            icon: 'img/marker_i3p.png',	title:"Sede Dada"
 	        });
-			var hotel_sanpaolo = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.0598373, 7.6529137),
+		var food_pingusto = new google.maps.Marker({
+	            position: new google.maps.LatLng(43.770803, 11.268676),
 	            map: map,
 	            icon: 'img/marker_hotel.png',
-				title:"Hotel Residence San Paolo"
+				title:"Pingusto"
 	        });
-			var stazione_portasusa = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.068641008917346, 7.6639509201049805),
+		var trasporti_autobus = new google.maps.Marker({
+                            position: new google.maps.LatLng(43.770922, 11.267545),
 	            map: map,
 	            icon: 'img/marker_trasporti.png',
-				title:"Stazione Metro e Treni Porta Susa"
+				title:"Fermata ATAF - Annigoni"
 	        });
-			var fermata_tram_tribunale = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.069232038276766, 7.660109996795654),
+		var trasporti_auto = new google.maps.Marker({
+                            position: new google.maps.LatLng(43.77165162742224, 11.270534992218018),
 	            map: map,
 	            icon: 'img/marker_trasporti.png',
-				title:"Fermata Autobus e Tram Palazzo di Giustizia"
+				title:"Parcheggio Beccaria (a pagamento)"
 	        });
 
 	      }
@@ -291,7 +290,7 @@ Sistemista agile: non puoi mancare !</p>
 						  <dt class="eat"><span><strong>Dove mangiare</strong></span></dt>
 						    <dd>Ristoranti</dd>
 						  <dt class="get_to"><span><strong>Come arrivare</strong></span></dt>
-						    <dd>Trasporti</dd>
+                                                  <dd>La fermata dell'autobus più vicina &egrave; <a href="https://maps.google.it/maps?saddr=Stazione+di+Firenze+Santa+Maria+Novella,+Piazza+della+Stazione,+Firenze&daddr=Annigoni+%4043.770920,11.267543&hl=it&ll=43.77286,11.258004&spn=0.011698,0.021522&sll=43.773502,11.25798&sspn=0.023396,0.043044&geocode=FVT4mwIdIaOrACEkXIBKQ0B8JSmHrcboqFYqEzEkXIBKQ0B8JQ%3BFSjkmwId1-2rAA&oq=Stazione+di+Santa&t=h&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ls&z=16&start=2" alt="Consulta la mappa del tragitto">Arrigoni</a></dd>
 						  <dt class="stay"><span><strong>Dove dormire</strong></span></dt>
 						    <dd>Alberghi</dd>
 						</dl>
@@ -301,7 +300,8 @@ Sistemista agile: non puoi mancare !</p>
 
 					<div class="column_3">
 						<h5>In auto</h5>
-						<p>Dall'autostrada, seguire le indicazioni per il centro.</p>
+                                                <p>Dall'autostrada uscire verso A11, firezione Firenze Centro/Aeroporto</p>
+                                                <p>Parcheggio pi&ugrave; vicino: <a href="http://www.firenzeparcheggi.it/index.php?id=3" alt="Visita il sito di firenze parcheggi per maggiori informazioni">Piazza Beccaria</a>
 
 					</div>
 
