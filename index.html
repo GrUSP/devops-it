@@ -37,8 +37,8 @@
 	<script>
 	function initialize_map() {
 	        var mapOptions = {
-	          zoom: 17,
-	          center: new google.maps.LatLng(43.770551, 11.268603),
+	          zoom: 13,
+                  center: new google.maps.LatLng(43.7855, 11.2350),
 	          mapTypeId: google.maps.MapTypeId.ROADMAP
 	        }
 	        var map = new google.maps.Map(document.getElementById('map_canvas'),
@@ -66,6 +66,18 @@
 	            map: map,
 	            icon: 'img/marker_trasporti.png',
 				title:"Parcheggio Beccaria (a pagamento)"
+	        });
+                var trasporti_treno = new google.maps.Marker({
+                            position: new google.maps.LatLng(43.77596, 11.24841),
+	            map: map,
+	            icon: 'img/marker_trasporti.png',
+				title:"Stazione dei Treni Santa Maria Novella"
+	        });
+                var trasporti_aereo = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.80203, 11.20128),
+                    map: map,
+	            icon: 'img/marker_trasporti.png',
+				title:"Aeroporto Amerigo Vespucci (Peretola)"
 	        });
 
 	      }
@@ -296,7 +308,7 @@ Sistemista agile: non puoi mancare !</p>
                                                       alt="Consulta la mappa del tragitto">Arrigoni</a><br />
                                                       Il parcheggio a pagamento pi&ugrave; vicino &egrave; <a 
                                                           href="http://www.firenzeparcheggi.it/index.php?id=3" 
-                                                          alt="Visita il sito di firenze parcheggi per maggiori informazioni">Piazza Beccaria</a>
+                                                          alt="Visita il sito di firenze parcheggi per maggiori informazioni">Piazza Beccaria</a>.
                                                   </dd>
 						  <!--<dt class="stay"><span><strong>Dove dormire</strong></span></dt>
                                                   <dd>Alberghi</dd>
@@ -308,7 +320,7 @@ Sistemista agile: non puoi mancare !</p>
 
 					<div class="column_3">
 						<h5>In auto</h5>
-                                                <p>Dall'autostrada A1 uscire verso A11, direzione Firenze Centro/Aeroporto</p>
+                                                <p>Dall'autostrada A1 uscire verso A11, direzione Firenze Centro/Aeroporto.</p>
 
 					</div>
 
@@ -319,14 +331,18 @@ Sistemista agile: non puoi mancare !</p>
                                                 con i binari alle spalle, lasciare la stazione dall'uscita principale 
                                                 (a sinistra), una volta fuori prendere a destra e proseguire per circa 300mt,
                                                 fino ad arrivare a Via dei Panzani, dove di fronte al negozio Yamamay potete prendere 
-                                                la <a href="http://www.ataf.net/tp/navigator.aspx?lvid=181&id_mtram=466440&cart=_&sts=LEOPOLDA&eds=BECCARIA&sl=C2&lvdr=As&dt=0&cmd=3#" alt="Consulta il sito di ATAF per maggiori dettagli">linea C2 (Leopolda-Beccaria)</a>
+                                                la <a href="http://www.ataf.net/tp/navigator.aspx?lvid=181&id_mtram=466440&cart=_&sts=LEOPOLDA&eds=BECCARIA&sl=C2&lvdr=As&dt=0&cmd=3#" 
+                                                    alt="Consulta il sito di ATAF per maggiori dettagli">linea C2 (Leopolda-Beccaria)</a>
                                                 che porta alla fermata "Annigoni" in meno di 15 minuti.
 						</p>
 					</div>
 
 					<div class="column_3">
 						<h5>In aereo</h5>
-						<p>
+                                                <p>Dall'aeroporto Amerigo Vespucci prendere l'autobus della <a 
+                                                    href="http://www.ataf.net/tp/routes.aspx?LN=it-IT&req_day=11&req_month=12&req_year=2012&linename=29" 
+                                                    alt="Consulta il sito di ATAF per maggiori dettagli">linea 29</a> per raggiungere la stazione dei 
+                                                Treni Santa Maria Novella, da li proseguire secondo le indicazioni del paragrafo precedente.
 						</p>
 					</div>
 
