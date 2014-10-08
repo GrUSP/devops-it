@@ -4,7 +4,7 @@ DevOps Florence Meeting
 DevOps Florence Meeting
 ------------------------------------------------------------
 
-L'evento e' a Firenze, il 22 Febbraio 2013
+L'evento è a Firenze, il 22 Febbraio 2013
 
 Tutte le informazioni sono disponibili sul sito [idi2013.devops.it](http://idi2013.devops.it )
 
